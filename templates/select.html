@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+</head>
+<body>
+{%extends 'base.html'%}
+{%block content%}
+<form action="/choose" method="post">
+
+<input type="submit" value="Dodaj produkty" name="add_product">
+<input type="submit" value="Usuń produkty" name="delete_product">
+</form>
+{%endblock%}
+</body>
+</html>

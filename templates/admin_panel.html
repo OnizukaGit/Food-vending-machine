@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+ {%extends 'base.html'%}
+ {%block content%}
+ <form action="/admin" method="post">
+
+
+        <h2>Zaloguj się jako Administrator</h2>
+        <input type="password" name="password">
+        <input type="submit">
+</form>
+{%endblock%}
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maszyna z przekąskami</title>
+</head>
+<body>
+{%extends 'base.html'%}
+{%block content%}
+
+<form action="/" method="post">
+<h1>Wybierz produkt:</h1><br>
+    <input type="text" name="get"><br>
+    <input type="submit" value="Weź">
+    {% for row in show %}
+ <tr>
+<ul><li>
+{{ row.0 }} {{ row.1 }}<br>
+</li>
+</ul>
+ </tr>
+{% endfor %}
+
+</form>
+
+{%endblock%}
+</body>
+</html>

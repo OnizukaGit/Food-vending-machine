@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+</head>
+<body>
+{%extends 'base.html'%}
+{%block content%}
+<form action="/add" method="post">
+
+<h1>Dodaj produkt i jego cenę</h1>
+Produkt: <input type="text" name="product"><br>
+Cena: <input type="text" name="price"><br>
+<input type="submit" value="Dodaj">
+</form>
+{%endblock%}
+</body>
+</html>

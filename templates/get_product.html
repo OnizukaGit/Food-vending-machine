@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{%block content%}
+<form action="/get" method="post">
+<h1>Wprowadź bilon</h1>
+
+<p>Kupujesz: {{ item.1 }} {{ item.2 }}</p>
+
+
+<input type="hidden" name="price" value="{{item.2}}">
+<p><input type="text" name="cash"></p>
+<p><input type="submit" value="Zapłać"></p>
+
+</form>
+{%endblock%}
